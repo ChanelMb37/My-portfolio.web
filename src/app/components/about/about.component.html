@@ -1,0 +1,61 @@
+<!-- about.component.html -->
+<section class="about-section" id="about">
+  <!-- Background animé -->
+  <div class="animated-background" data-aos="parallax"></div>
+  
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-down">Mon Parcours 🚀</h2>
+
+    <div class="row align-items-center">
+      <!-- Colonne gauche : Présentation + Timeline -->
+      <div class="col-lg-6 order-lg-1 order-2">
+        <!-- Carte de présentation -->
+        <div class="profile-card" data-aos="zoom-in">
+          <img src="assets/images/4bfce95f-e89f-4414-9e0e-418bdd425fce.jpeg" alt="Chanel Mbianga" class="profile-image">
+          <div class="profile-content">
+            <h3>Chanel Mbianga</h3>
+            <p class="title">Développeur Full-Stack Junior</p>
+            <p class="location">📍 Bangangté, Cameroun</p>
+            <p class="bio">
+              Passionné par les technologies web depuis 2020, je me spécialise dans la création d'applications modernes 
+              avec Angular et Node.js. Autodidacte déterminé, j'allie curiosité technique et rigueur méthodologique.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline animée -->
+        <div class="timeline-wrapper" data-aos="fade-right">
+          <div class="timeline-item" *ngFor="let item of timeline">
+            <div class="timeline-icon">{{ item.year }}</div>
+            <div class="timeline-content">
+              <h4>{{ item.title }}</h4>
+              <p>{{ item.description }}</p>
+              <div class="timeline-tech">
+                <span *ngFor="let tech of item.technologies">{{ tech }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colonne droite : Cube 3D -->
+      <div class="col-lg-6 order-lg-2 order-1">
+        <div class="tech-cube-wrapper" data-aos="rotate-cube">
+          <!-- [Conserver le code existant du cube 3D] -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tech-cube-wrapper" data-aos="rotate-cube">
+    <div class="tech-cube">
+      <div class="cube-face front"><img src="assets/icons/angular-icon.svg" alt="Angular"></div>
+      <div class="cube-face back"><img src="assets/icons/firebase-icon.svg" alt="Firebase"></div>
+      <div class="cube-face right"><img src="assets/icons/nestjs.svg" alt="NestJS"></div>
+      <div class="cube-face left"><img src="assets/icons/typescriptlang-icon.svg" alt="TypeScript"></div>
+    </div>
+  </div>
+
+
+</section>

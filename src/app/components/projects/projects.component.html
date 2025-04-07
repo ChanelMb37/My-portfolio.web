@@ -1,0 +1,56 @@
+<section class="projects-section py-5" id="projects">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-down">Mes Réalisations 💻</h2>
+  
+      <!-- Filtres -->
+      <div class="filters mb-5" data-aos="fade-up">
+        <div class="btn-group">
+          <button 
+            *ngFor="let tech of technologies" 
+            class="btn btn-filter"
+            [class.active]="selectedTech === tech"
+            (click)="filterProjects(tech)"
+          >
+            {{ tech }}
+          </button>
+        </div>
+      </div>
+  
+      <!-- Grille de Projets -->
+      <div class="row g-4">
+        <div 
+          class="col-lg-4 col-md-6" 
+          *ngFor="let project of filteredProjects; let i = index"
+
+          data-aos="zoom-in" 
+          [attr.data-aos-delay]="100 * i"
+
+        >
+          <div class="project-card" (mouseenter)="toggleHover(project)" (mouseleave)="toggleHover(project)">
+            <div class="card-header">
+              <img [src]="project.image" [alt]="project.title" class="project-image">
+              <div class="hover-overlay">
+                <a [href]="project.demoUrl" target="_blank" class="btn btn-demo">
+                  <i class="fas fa-eye me-2"></i>Démo
+                </a>
+                <a [href]="project.codeUrl" target="_blank" class="btn btn-code">
+                  <i class="fab fa-github me-2"></i>Code
+                </a>
+              </div>
+            </div>
+            
+            <div class="card-body">
+              <h3 class="project-title">{{ project.title }}</h3>
+              <p class="project-description">{{ project.description }}</p>
+              
+              <div class="tech-tags">
+                <span *ngFor="let tech of project.technologies" class="tech-tag">
+                  {{ tech }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

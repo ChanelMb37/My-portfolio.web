@@ -1,0 +1,139 @@
+// Variables réutilisables
+$gradient-primary: linear-gradient(135deg, #6366f1 0%, #d946ef 100%);
+$accent-cyan: #06b6d4;
+
+.hero-section {
+  padding: 6rem 0;
+  background: rgba(249, 250, 251, 0.98);
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    padding: 4rem 0;
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 767px) {
+    font-size: 2.5rem;
+  }
+}
+
+.text-gradient {
+  background: $gradient-primary;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+// Effet Machine à Écrire
+.typing-effect {
+  &::after {
+    content: "|";
+    animation: blink 1s infinite;
+    color: #d946ef;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+// Image de profil
+.hero-image-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+
+  .hero-image {
+    width: 100%;
+    border-radius: 1.5rem;
+    transform: rotate(-3deg);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+      transform: rotate(0);
+    }
+  }
+
+  .gradient-border {
+    position: absolute;
+    inset: -8px;
+    background: $gradient-primary;
+    border-radius: 2rem;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 0.3;
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+// Animation de flottement
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+// Boutons CTA
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+
+  &-gradient {
+    background: $gradient-primary;
+    color: white !important;
+    border: none;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  &-ghost {
+    border: 2px solid #6366f1;
+    color: #6366f1;
+    background: transparent;
+
+    &:hover {
+      background: rgba(99, 102, 241, 0.05);
+    }
+  }
+}

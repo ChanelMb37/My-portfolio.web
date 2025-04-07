@@ -17,6 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": ["aos"],
+
             "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -26,13 +28,27 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/documents"
+
             ],
             "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+  "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "node_modules/aos/dist/aos.css",
+  "src/styles.scss"
+],
+"scripts": [
+  "node_modules/@fortawesome/fontawesome-free/js/all.min.js",
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+  "node_modules/aos/dist/aos.js",
+  "src/assets/types/three.min.js",
+  "src/assets/libs/vanta/vanta.birds.min.js"
+]
+
+
           },
           "configurations": {
             "production": {
@@ -100,5 +116,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c9f3eee5-f48f-4e2d-8aaf-63311a2408cb"
   }
 }

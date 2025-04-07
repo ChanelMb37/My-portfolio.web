@@ -1,0 +1,27 @@
+<!-- cv.component.html -->
+<section class="cv-section" id="cv">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-down">Mon Curriculum Vitae 📄</h2>
+  
+      <!-- Contrôles -->
+      <div class="controls" data-aos="fade-up">
+        <button class="btn btn-download" (click)="downloadCV()">
+          <i class="fas fa-file-download me-2"></i>Télécharger
+        </button>
+        <button class="btn btn-view" (click)="toggleView()">
+          <i class="fas fa-{{ isPreviewVisible ? 'times' : 'eye' }} me-2"></i>
+          {{ isPreviewVisible ? 'Fermer la vue' : 'Voir en ligne' }}
+        </button>
+      </div>
+  
+      <!-- Prévisualisation PDF -->
+      <div class="pdf-preview" *ngIf="isPreviewVisible" data-aos="zoom-in">
+        <pdf-viewer 
+          [src]="pdfSrc"
+          [render-text]="true"
+          [original-size]="false"
+          style="width: 100%; height: 600px;"
+        ></pdf-viewer>
+      </div>
+    </div>
+  </section>
