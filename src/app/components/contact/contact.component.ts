@@ -17,12 +17,12 @@ export class ContactComponent implements OnInit {
   socialLinks = [
     { name: 'Facebook', url: 'https://facebook.com', icon: 'fab fa-facebook' },
     { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/your-profile', icon: 'fab fa-linkedin' },
-    { name: 'Instagram', url: 'https://instagram.com', icon: 'fab fa-instagram' },
+    // { name: 'Instagram', url: 'https://instagram.com', icon: 'fab fa-instagram' },
     { name: 'TikTok', url: 'https://tiktok.com/@your-profile', icon: 'fab fa-tiktok' },
     { platform: 'GitHub', url: 'https://github.com/ChanelMb37', icon: 'fab fa-github' },
     { platform: 'Twitter', url: 'https://twitter.com/your-profile', icon: 'fab fa-twitter' },
     { name: 'OpenClassrooms', url: 'https://openclassrooms.com', icon: 'fas fa-graduation-cap' }, 
-    { platform: 'Dev.to', url: 'https://dev.to/your-profile', icon: 'fab fa-dev' }
+    // { platform: 'Dev.to', url: 'https://dev.to/your-profile', icon: 'fab fa-dev' }
   ];
 
   constructor(private fb: FormBuilder) {}
