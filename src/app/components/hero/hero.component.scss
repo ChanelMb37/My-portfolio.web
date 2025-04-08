@@ -24,11 +24,28 @@ $accent-cyan: #06b6d4;
   font-size: 3.5rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  padding: 40px;
 
   @media (max-width: 767px) {
     font-size: 2.5rem;
   }
 }
+
+.cta-wrapper {
+  display: flex;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
 
 .text-gradient {
   background: $gradient-primary;
@@ -38,6 +55,8 @@ $accent-cyan: #06b6d4;
   -webkit-text-fill-color: transparent;
   position: relative;
 }
+
+
 
 .hero-subtitle {
   font-family: 'Inter', sans-serif;

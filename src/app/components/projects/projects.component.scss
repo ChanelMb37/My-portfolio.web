@@ -5,6 +5,14 @@
     margin: 100px;
   }
   
+  .filters .btn-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+
   .filters {
     display: flex;
     justify-content: center;
@@ -103,3 +111,9 @@
       font-weight: 500;
     }
   }
+  @media (max-width: 768px) {
+    .projects-section {
+      margin: 20px;
+    }
+  }
+  
