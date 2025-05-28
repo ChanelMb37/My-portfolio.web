@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http'; // Permet de faire des requê
 })
 export class CvComponent {
   isPreviewVisible = false; // Contrôle l'affichage ou non de la prévisualisation du CV
-  pdfSrc = 'assets/documents/cv.pdf'; // Chemin relatif vers le fichier PDF
+  pdfSrc = 'assets/documents/cvChanel_pdf'; // Chemin relatif vers le fichier PDF
 
   // Injection de services dans le constructeur
   constructor(

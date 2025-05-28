@@ -25,21 +25,21 @@ export class AboutComponent implements OnInit {
     },
     {
       year: '2022',
-      title: 'Certification Firebase',
-      description: 'Maîtrise des services cloud et des bases de données NoSQL',
+      title: 'Certificat Firebase',
+      description: 'connaissance des services cloud et des bases de données NoSQL',
       technologies: ['Firestore', 'Auth', 'Hosting']
     },
     {
       year: '2023',
       title: 'Expérience Professionnelle',
       description: 'Développement d\'applications full-stack en entreprise',
-      technologies: ['Node.js', 'MongoDB', 'Docker']
+      technologies: ['Node.js', 'MongoDB', 'MySQL', 'NestJS']
     },
     {
-      year: '2024',
+      year: '2024-2025',
       title: 'Spécialisation Back-End',
       description: 'Architectures microservices avec NestJS et Kubernetes',
-      technologies: ['NestJS', 'GraphQL', 'AWS']
+      technologies: ['NestJS', 'MySql']
     }
   ];
 

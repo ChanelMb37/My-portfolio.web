@@ -21,7 +21,7 @@ export class ContactComponent implements OnInit {
     { name: 'TikTok', url: 'https://tiktok.com/@your-profile', icon: 'fab fa-tiktok' },
     { platform: 'GitHub', url: 'https://github.com/ChanelMb37', icon: 'fab fa-github' },
     { platform: 'Twitter', url: 'https://twitter.com/your-profile', icon: 'fab fa-twitter' },
-    { name: 'OpenClassrooms', url: 'https://openclassrooms.com', icon: 'fas fa-graduation-cap' }, 
+    { name: 'OpenClassrooms', url: 'https://openclassrooms.com/fr/account', icon: 'fas fa-graduation-cap' }, 
     // { platform: 'Dev.to', url: 'https://dev.to/your-profile', icon: 'fab fa-dev' }
   ];
 

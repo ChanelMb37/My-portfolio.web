@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   selectedTech: string = 'Tout';
-  technologies: string[] = ['Tout', 'Angular', 'Firebase', 'NestJS', 'TypeScript'];
+  technologies: string[] = ['Tout', 'Angular', 'Ionic', 'Firebase', 'NestJS', 'TypeScript'];
   
   projects = [
     {
@@ -46,7 +46,7 @@ export class ProjectsComponent implements OnInit {
       title: 'API REST',
       description: 'Développement backend avec NestJS et MongoDB',
       technologies: ['NestJS', 'MongoDB', 'TypeScript'],
-      image: 'assets/images/api.jpg',
+      image: 'assets/images/nest.PNG',
       demoUrl: '#',
       codeUrl: '#'
     }

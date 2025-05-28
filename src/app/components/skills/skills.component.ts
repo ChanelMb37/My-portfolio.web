@@ -22,6 +22,12 @@ export class SkillsComponent implements OnInit {
       tags: ['Typage', 'Interfaces', 'Generics']
     },
     {
+      name: 'Ionic',
+      level: 40,
+      icon: 'logo-ionic',
+      tags: ['Components', 'Navigation', 'Gesture', 'Theming']
+    },
+    {
       name: 'JavaScript',
       level: 50,
       icon: 'fab fa-js-square',
@@ -70,34 +76,34 @@ export class SkillsComponent implements OnInit {
       level: 50,
       icon: 'fab fa-git-alt',
       tags: ['Workflow', 'CI/CD', 'Actions']
-    },
-
-    {
-      name: 'Design Graphique (Canva)',
-      level: 90,
-      icon: 'fab fa-canva',
-      tags: ['Affiches', 'Présentations', 'Logos', 'Réseaux sociaux']
-    },
-
-    {
-      name: 'Maintenance Informatique',
-      level: 85,
-      icon: 'fas fa-tools',
-      tags: ['Dépannage', 'Réseaux', 'OS', 'Sécurité']
-    },
-
-    {
-      name: 'Outils IA Français',
-      level: 75,
-      icon: 'fas fa-robot',
-      tags: ['ChatGPT', 'Midjourney', 'Copilot', 'DALL-E']
-    },
-    {
-      name: 'Langues',
-      level: 90,
-      icon: 'fas fa-language',
-      tags: ['Français', 'Anglais']
     }
+
+    // {
+    //   name: 'Design Graphique (Canva)',
+    //   level: 90,
+    //   icon: 'fab fa-canva',
+    //   tags: ['Affiches', 'Présentations', 'Logos', 'Réseaux sociaux']
+    // },
+
+    // {
+    //   name: 'Maintenance Informatique',
+    //   level: 85,
+    //   icon: 'fas fa-tools',
+    //   tags: ['Dépannage', 'Réseaux', 'OS', 'Sécurité']
+    // },
+
+    // {
+    //   name: 'Outils IA Français',
+    //   level: 75,
+    //   icon: 'fas fa-robot',
+    //   tags: ['ChatGPT', 'Midjourney', 'Copilot', 'DALL-E']
+    // },
+    // {
+    //   name: 'Langues',
+    //   level: 90,
+    //   icon: 'fas fa-language',
+    //   tags: ['Français', 'Anglais']
+    // }
     
 
     
