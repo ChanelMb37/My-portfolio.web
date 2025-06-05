@@ -44,11 +44,11 @@ export class ProjectsComponent implements OnInit {
     },
     {
       title: 'API REST',
-      description: 'Développement backend avec NestJS et MongoDB',
+      description: 'Développement backend avec NestJS et MySql',
       technologies: ['NestJS', 'MongoDB', 'TypeScript'],
       image: 'assets/images/nest.PNG',
-      demoUrl: '#',
-      codeUrl: '#'
+      demoUrl: 'https://github.com/ChanelMb37/My-portfolio.web/tree/master',
+      codeUrl: 'https://github.com/ChanelMb37/My-portfolio.web/tree/master'
     }
   ];
 

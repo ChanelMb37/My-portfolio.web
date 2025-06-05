@@ -18,27 +18,27 @@ export class AboutComponent implements OnInit {
       technologies: ['HTML5', 'CSS3', 'JS']
     },
     {
-      year: '2021',
+      year: '2023',
       title: 'Formation Intensive Front-End',
       description: 'Spécialisation en Angular et bonnes pratiques de développement',
-      technologies: ['Angular', 'TypeScript', 'RxJS']
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'Firebase']
     },
     {
-      year: '2022',
-      title: 'Certificat Firebase',
-      description: 'connaissance des services cloud et des bases de données NoSQL',
-      technologies: ['Firestore', 'Auth', 'Hosting']
+      year: '2024',
+      title: 'Certificats OpenClassrooms',
+      description: 'Obtention des certificats en développement web ',
+      technologies: ['HTML/CSS', 'JavaScript', 'Angular', 'TypeScript']
     },
+    // {
+    //   year: '2024',
+    //   title: 'Expérience Professionnelle',
+    //   description: 'Développement d\'applications full-stack en entreprise',
+    //   technologies: ['Node.js', 'MongoDB', 'MySQL', 'NestJS']
+    // },
     {
-      year: '2023',
-      title: 'Expérience Professionnelle',
-      description: 'Développement d\'applications full-stack en entreprise',
-      technologies: ['Node.js', 'MongoDB', 'MySQL', 'NestJS']
-    },
-    {
-      year: '2024-2025',
+      year: '2025',
       title: 'Spécialisation Back-End',
-      description: 'Architectures microservices avec NestJS et Kubernetes',
+      description: 'Architectures microservices avec NestJS ',
       technologies: ['NestJS', 'MySql']
     }
   ];
