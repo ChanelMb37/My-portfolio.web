@@ -45,6 +45,13 @@ export class SkillsComponent implements OnInit {
       icon: 'fab fa-bootstrap',
       tags: ['Components', 'Utilities', 'Responsive']
     },
+
+    {
+      name: 'Angular Material',
+      icon: 'material-icons',
+      level: 60,
+      tags: ['Components', 'Theming', 'Responsive']
+    },
     
     {
       name: 'Node.js',
